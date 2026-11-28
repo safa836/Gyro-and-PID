@@ -4,21 +4,22 @@
 
 This project focuses on implementing a PID-based motor speed controller using an ESP32 microcontroller.
 
-The system uses an MPU6050 IMU for sensor measurements and an ESC to control a brushless DC motor.
+The system uses an HW-290 IMU module equipped with an MPU-6050 sensor to measure angular velocity along three axes and an ESC to control a brushless DC motor.
 
 ## Objectives
 
-- Read gyroscope data from the MPU6050.
+- Read gyroscope data from the HW-290 IMU module.
 - Process and filter sensor measurements.
-- Implement a PID controller.
+- Implement a one-axis PID controller and a Kalman filter.
 - Generate PWM signals using the ESP32.
 - Control the brushless motor through an ESC.
-- Evaluate the system's performance.
+- Set up and evaluate the system's performance on a test bench.
+- Develop a real-time PID tuning and sensor monitoring panel with live gyroscope data visualization and adjustable controller gains.
 
 ## Hardware
 
-- ESP32-C3 supermini
-- MPU6050 / MPU9250 IMU
+- ESP32 Devkit V1
+- HW-290 IMU module
 - Brushless DC motor (BLDC)
 - Electronic Speed Controller (ESC)
 - Power supply
@@ -28,6 +29,7 @@ The system uses an MPU6050 IMU for sensor measurements and an ESC to control a b
 
 - Arduino IDE
 - C++
+- Python and Matlab simulation
 - ESP32 Arduino Core
 - Git and GitHub
 
@@ -61,12 +63,6 @@ The project is divided into the following stages:
 5. Motor control and testing.
 6. Performance evaluation.
 
-## Contributors
-
-- Safa — Hardware / Firmware
-- Maryam — Control Systems
-- Safa — Testing
-
 ## Project Status
 
-Currently under development.[ESP32 Evaluation Project Assignment Brief.pdf](https://github.com/user-attachments/files/35398184/ESP32.Evaluation.Project.Assignment.Brief.pdf)
+Currently under development.
